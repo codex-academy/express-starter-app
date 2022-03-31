@@ -5,6 +5,7 @@ const app = express();
 const PORT =  process.env.PORT || 3017;
 
 // enable the req.body object - to allow us to use HTML forms
+// and when using POST requests
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
